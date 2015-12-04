@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>BlogApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -29,8 +29,7 @@
     <% flash.each do |name, msg| %>
     <div class='alert alert-<%="#{name}" %>'>
       <a href='#' class='close' data-dismiss='alert' &#215; ></a>  
-      <%= content_tag :div, msg, :id => "flash_#{name}" 
-      if msg.is_a?(String) %>
+      <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)  %>
       </div> 
   </div>
   <% end %>
@@ -43,7 +42,6 @@
   </div>
 </div>
  
-</div> 
-
+</div>  
 </body>
 </html>
