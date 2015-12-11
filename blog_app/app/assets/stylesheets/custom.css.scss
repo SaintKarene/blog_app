@@ -2,7 +2,28 @@
 @import "bootstrap";
 
 body {
-    padding-top:70px;
+    padding-top: 70px;
     background: #d8d8d8;
     color: #791e9e;
 } 
+.article-title, .article-body {
+    padding-left: 0.7em;
+}
+.article-title {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+}
+.article-body {
+    font-size: 1.5em;
+}
+#new-article-btn {
+    margin-bottom: 10px;
+}
+#article-date {
+    margin-bottom: 40px;
+}
+.article-detail-title {
+    font-size: 4em;
+    margin-bottom: 40px;
+}
