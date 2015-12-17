@@ -45,6 +45,7 @@ class ArticlesController < ApplicationController
 
   
   def show
+    @comment = @article.comments.build
   end
   
   def destroy
